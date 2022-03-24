@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); /*importando uma fonte do google fonts*/
+
+/* <!--tirando as normas padroes do navegador--> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+/* aqui colocamos uma imagem de fundo */
+body{
+    /* esse linear é para colocar degrade ou a cor opaca na frente */
+    background-image: /*linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),*/ url(./imgs/fundo-rosa-sombreado-com-textura-de-cimento_53876-98576.jpg);
+    /* comando para que a imagem use 100 da tela */
+    background-size: cover;
+    /* posicionamos a imagem no centro */
+    background-position: center;
+    /* caso a imagem comece a repitir coloque esse comando */
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+/* aqui tiramos a fromatação padrão da lista */
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none; /*tirando a decoração*/
+    color: inherit; /*falando para herdar a cor do pai*/
+}
+
+/* define um espaço onde nosso conteudo pode ficar */
+.embrulho{
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    /* background-color: crimson; */
+}
+  
+#cabecalho-main{
+    /* background-color: darkblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: space-around;
+}
+
+#foto-perfil{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*deixa a imagem certinha sem distorcer */
+    object-position: center;
+    border-radius: 50%; /*esse comando arredonda as bordas*/
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif; /*Importando a fonte do google fonts*/
+    color: #5E8FA6;
+    font-weight: 600;
+}
+ .link{
+
+    width: 100%;
+ }
+
+ .link > a{ 
+
+    font-family: 'Montserrat', sans-serif; /*Importando a fonte do google fonts*/
+    color: #fff;
+    font-weight: 600; 
+    text-align: center;
+    background-color: #5E8FA6;
+    color: rgb(255, 255, 255);
+    display: block; /*muda o comportamento do "a" de linha para bloco*/
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+ }
+/* define para qual cor o botão vai quando passar o m */
+ .link > a:hover{
+     background-color: rgba(255, 255, 255, 0.192);
+     color:#5E8FA6;
+     border-width: medium;
+     border-style: solid;
+     border-color: #5E8FA6;
+ }
+
+ #rodape-simbolos{
+     display: flex;
+     justify-content: center;
+ }
+
+ .simbolo{
+
+     font-size: 30px;
+     color: #5E8FA6;
+     margin: 20px 20px;
+ }
+
+ .simbolo:hover{
+     opacity: 0.5;
+ }
+ 
+ /* .letra:hover{
+
+ } */

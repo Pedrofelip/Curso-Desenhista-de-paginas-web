@@ -1,0 +1,209 @@
+.card1{
+    width: 100%;
+    height: 730px;
+    background-color: #1D2D44;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card2{
+    width: 100%;
+    height: 730px;
+    background-color: red;
+}
+
+.card3{
+    width: 100%;
+    height: 730px;
+    background-color: blueviolet;
+}
+
+.card1 > img{
+    width: 50%;
+}
+
+.alinhamento_banner{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.setas_banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    
+}
+
+.seta_anterior{
+    width: 3.5%;
+    height: 65px;
+    border-radius: 50px;
+    background-color:#1d2d4400;
+    border: none;
+    font-size: 20px;
+    color: white;
+    position:absolute;
+    top: 50%;
+    right: 0;
+}
+
+.seta_proximo{
+    width: 3.5%;
+    height: 65px;
+    border-radius: 50px;
+    background-color:#1d2d4400;
+    border: none;
+    font-size: 20px;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 0;
+}
+
+.bolinhas_banner{
+    position:absolute;
+    top: 85%;
+    left: 49%;
+}
+
+.seta_anterior:hover, .seta_proximo:hover{
+    width: 3.5%;
+    height: 65px;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.623);
+    background-color:rgba(128, 128, 128, 0.589);
+    border: none;
+    transition: all 0.25s ease-in;
+}
+
+.txt_banner{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_banner{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.descricao_banner{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 65px;
+}
+
+.btn_banner{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.btn_cadastro{
+    width: 35.7%;
+    height: 5.4vh;
+	padding: 10px;
+	border: none;
+	margin-bottom: 12px;
+	border-radius: 16px;
+    background-color: #EF233C;
+    color: white;
+    font-size: 24px;
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_login{
+    width: 35.7%;
+    height: 5.4vh;
+	border: 5px solid #EF233C;
+	margin-bottom: 12px;
+	border-radius: 16px;
+    background-color: #1D2D44;
+    color: white;
+    font-size: 24px;
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao_noticias{
+    background-color: #CBDBEB ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao_artigos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.h2_noticias{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px 0 35px;
+}
+
+.artigo{
+    width: 20%;
+    padding: 0 0 50px ;
+    margin-right: 10px;
+}
+
+.artigo > img{
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.artigo > h3{
+    width: 100%;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.artigo > p{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: black;
+}
+
+.btn_ver_mais{
+    color: #EF233C;
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 22px;
+    width: 120px;
+    background-color: #CBDBEB;
+    border: none;
+    margin-bottom: 60px;
+}
+
+

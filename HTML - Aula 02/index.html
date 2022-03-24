@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+<!--uma outra forma de usar o css passsando as infos pelo header-->
+    <style>
+        #artigos {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <!--engloba todo o conteudo do site desde o cabeçalho ate o rodape-->
+    <header style="background-color: red;">
+        <!--cabeçalho & exemplo de css em linha-->
+
+        <a href="https://www.instagram.com/gabriele_britoo/" target="blank">cabeça de coco</a>
+        <!--exemplo de como criar uma ancora que abre outra aba ao inves de entrar na mesma-->
+
+        <h3>Tags semanticas</h3>
+        <!--logo do site-->
+        <nav>
+            <!--uma tag pai que engloba nosso menu de navegação-->
+            <a href="#secao-imagens">imagens</a>
+            <!--essa tag serve para redirecionamento & redirecionamneto para uma seção na mesma pagina-->
+            <a href="#secao-artigos">artigos</a>
+            <a href="https://www.instagram.com/gabriele_britoo/" target="blank">muie mais linda do mundo</a>
+        </nav>
+    </header>
+    <main style="background-color: pink;">
+        <!--o conteudo do nosso site-->
+        <section>
+            <!--serve para dividir as seçoes do nosso site-->
+            <h1>Voce conhece os poderes do minoxidil</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur incidunt sit
+                magnam, delectus voluptatem eum doloribus alias dolore magni dolorem neque maxime sequi possimus laborum
+                unde? Voluptatem, necessitatibus?</p>
+            <!--tag para textos-->
+        </section>
+        <section id="secao-imagens">
+            <!--demos um id para essa seção conseguir ser identificada-->
+            <h2>cachorros imgs</h2>
+            <img src="./imgs/au1.jfif" alt="cachorro fofo" width="40%" height="500px">
+            <a href="https://tenor.com/view/jesus-balling-basket-ball-basketball-gif-22973284" target="blank"><img
+                    src="./imgs/ovo-com-pinto-red.jpg" alt="lionel pinto" width="40%" height="500ox"></a>
+        </section>
+        <section id="secao-artigos">
+            <h2>Artigos sobre semantica</h2>
+            <div id="artigos">
+                <!--seria um container para o nosso conteudo limitando e agrupando os itens-->
+                <article>
+                    <!--seria um conteudo independente que pode ser apresentado em qualquer lugar do nosso site podendo ser reutilizado-->
+                    <h3>cachorrão</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque eveniet iste rem a,
+                        assumenda quia dolorem nemo dignissimos laborum itaque aut, voluptate veritatis est quo. Autem
+                        hic enim at!</p>
+                </article>
+                <article>
+                    <h3>cachorrão 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cum fugit quis obcaecati omnis
+                        deserunt aperiam, non consectetur minus esse vero, dolores in odit labore. Iure totam laborum
+                        amet aut.</p>
+                </article>
+            </div>
+            <aside>
+                <!--Seria um article só que segundario, não é o conteudo principal do site e normalmente fica no canto e seeria um menu de navegaçaõ lateral-->
+                <h4>Artigos em destaque</h4>
+                <nav>
+                    <!--uma tag pai que engloba nosso menu de navegação-->
+                    <ol>
+                        <!--lista ordenada, uma lista que a ordem importa, tem numeros-->
+                        <li><a href="#">Artigo sobre auau</a></li>
+                        <!--uma tag que representa um item da lista-->
+                        <li><a href="#">Artigo sobre cachorros</a></li>
+                        <li><a href="#">Artigo sobre BBB</a></li>
+                    </ol>
+                </nav>
+            </aside>
+        </section>
+    </main>
+    <footer style="background-color: saddlebrown;">
+        <!--rodape-->
+        <p>&copy; Todos os direitos reservados. </p>
+    </footer>
+</body>
+
+</html>

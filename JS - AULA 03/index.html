@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS AULA 03</title>
+
+    <link rel="icon" href="./img/eu.jpg">
+</head>
+<body>
+    <h1>Digite os numeros nos inputs para fazer um calculo com eles!</h1>
+    <form>
+        <br>
+        <br>
+        <div>
+            <label for="input_n1">numero 1</label>
+            <input id="input_n1" type="number">
+        </div>
+        <br>
+        <div>
+            <label for="input_n2">numero 2</label>
+            <input id="input_n2" type="number">
+        </div>
+        <br>
+        <div>
+            <label for="resultado">numero 3</label>
+            <input id="resultado" type="number" disabled> <!--o disabled é para que o usuario não consiga enserir nenhum valor no input-->
+        </div>
+<!-- se vc não definir um tipo para o um botão dentro de um form ele vai por padrão ser um submit e para evitar isso tem que definir um tipo para ele -->
+        <br>
+        <button type="button" onclick="somarNumeros()">Somar numeros</button>
+        <button type="button" onclick="subtrairNumero()">subtrair numeros</button>
+        <button type="button" onclick="multiplicarNumero()">multiplicar numeros</button>
+        <button type="button" onclick="dividirNumero()">dividir numeros</button>
+        <button type="button" onclick="limparInputs()">limpar inputs</button>
+        <button type="button"></button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

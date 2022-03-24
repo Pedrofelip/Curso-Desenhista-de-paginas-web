@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+
+    <script src="./script.js"></script>
+    <!--como linkar o aquivo externo de js-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <script>  
+        alert("Olá mundo!!")
+    </script> -->
+    <!--Aqui é um tipo de add js de forma interna-->
+</head>
+
+<body>
+    <h1>Primeiro codigo com js</h1>
+
+    <button onclick="aparecerAlerta()">Clique aqui para aparecer um alert</button>
+
+    <button onclick="aparecerData()">Clique aqui para aparecer a data</button>
+
+    <h2 id="data"></h2>
+
+    <p id="paragrafo" ondblclick="mudarDblClick()" onmousedown="mudarMouseSegurar()">Clique duas vezs para mudar o texto</p>
+
+    <button id="paragrafo" ondblclick="mudarDblClick()" onmousedown="mudarMouseSegurar()" onmouseup="mudarMouseSoltar()">Clique aqui duas vezes para mudar o texto</button>
+
+    <button onclick="trocarImg()">Clique aqui para te contar um segredo</button>
+    <div id="img" style="width: 480px; height: 277px;"></div>
+    <br>
+    <button onclick="acenderLampada()">Clique aqui para acender a lampada</button>
+    <button onclick="apagarLampada()">Clique aqui para desligar a lampada</button>
+
+
+    <div id="quadrado" class="apagada"></div>
+    <button onclick="mudarCorQuadrado()">Clique aqui para mudar a cor do quadrado</button>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h3, a, h2, p, label, input, textarea, button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper{
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho{
+    background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%);
+    padding: 32px 0;
+    color: #fff;
+}
+.links_menu > a{
+    padding: 12px 15px;
+}
+.links_menu > a:hover{
+    opacity: 0.5;
+}
+.link_ativo{
+    text-decoration: underline;
+}
+
+main{
+    background-color: #f3f5f7;
+    padding: 64px 0;
+    min-height: 90vh;
+}
+
+
+.mama{
+    background-color: #b6b6b6;
+    border-radius: 5px;
+}
+
+.mama:hover{
+    background-color: #b6b6b68a;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    padding: 8px;
+    background: #BC3EDB;
+    color: #fff;
+}

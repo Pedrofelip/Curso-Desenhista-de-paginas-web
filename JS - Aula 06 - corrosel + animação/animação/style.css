@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito:wght@600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* pensando em responsividade deixamos um padrão de tamanho maximo para o objeto mas falamos para ele se ajustar a 90% por cento das demais telas abaixo desse tamanho */
+.wrapper{
+    /* background-color: aqua; */
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto; /*centralizando o objeto(a grid)*/
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*para ficar alinhado no centro da seção no formato em linha*/
+}
+
+.btn{
+    font-family: 'Lexend Deca' ,  sans-serif;
+    font-size: 20px;
+    color: #EA0F78;
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content; /*se adapta ao conteudo que esta dentro dele*/
+}
+
+.btn:hover{
+    opacity: 0.8;
+    
+}
+
+.secao-inicial{
+    padding: 32px 0;
+    color: #fff;
+    background: linear-gradient(90deg, #D83482 0%, #EC0A76 100%);
+}
+
+.logo{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700; /*como importamos a mesma fonte com diferentes pesos agr temos que falar qual o peso dela que queremos*/
+    font-size: 16px;
+}
+
+.links-secoes{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+}
+
+.links-secoes > a{
+    /* background-color: yellow; */
+    padding: 10px 20px;
+}
+
+.links-secoes > a:hover{
+    text-decoration: underline;
+}
+
+.btn_menu{
+    font-size: 16px;
+}
+
+.conteudo-inicial{
+    /* background-color: aqua; */
+    margin-top: 64px;
+}
+
+.conteudo-esq{
+    /* background-color: blue; */
+    width: 40%;
+}
+
+.conteudo-esq > h1{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 58px;
+}
+
+.conteudo-esq > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+    margin: 10px 0 32px;
+}
+
+.secao-artigos{
+    background-color: #f3f5f7;
+    padding: 64px 0;
+}
+
+.secao-artigos > h2{
+    text-align: center;
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #313131;
+    margin-bottom: 32px;
+
+}
+
+.artigos-principais{
+    /* background-color: rgb(136, 255, 0); */
+    width: 65%;
+}
+
+.artigos-principais > h3, .artigos_destaque > h3{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #313131;
+}
+
+.artigos-principais > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    color: #B6B6B6;
+    line-height: 26PX;
+    margin: 10px 0 32px;
+}
+
+.cards{
+    /* background-color: #EA0F78; */
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: beige;
+    width: 48%;
+    min-height: 310px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    
+
+}
+
+.cabecalho-card{
+    margin-bottom: 20px;
+}
+
+.cabecalho-card > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+    color: #B6B6B6;
+}
+
+.cabecalho-card > i{
+    font-size: 25px;
+    color: #B6B6B6;
+}
+
+.cabecalho-card > i:hover::before{  /*para que pudessemos trocar o icon assim quando passar o mouse em cima usamos esse before que altera o icone*/
+    font-family: "Font Awesome 5 Free"; /*aqui é meio que o nome da fml do icone*/
+    content: "\f7a9"; /*aqui é o codigo do icone*/
+    font-weight: 600; /*para que pudesse reconehcer o outro icone é preciso falar qual o peso*/
+}
+
+.cabecalho-card > i:hover{
+    color: rgb(221, 10, 10);
+    transition: 0.2s;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.cabecalho-card > i{
+    font-size: 25px;
+    /* color: #EA2181; */
+}
+
+.conteudo-card > h4, .card_destaque > h4{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ea2181;
+    margin-bottom: 5px;
+}
+
+.conteudo-card > p, .textos_finais > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    color: #B6B6B6;
+    line-height: 26px;
+}
+
+.artigos_destaque{
+    /* background-color: aqua; */
+    width: 33%;
+}
+
+.cards_destaque{
+    /* background-color: #B6B6B6; */
+    margin-top: 20px;
+}
+
+.card_destaque{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+.secao-artigos > div{
+    align-items: flex-start;
+}
+
+.secao_final{
+    padding: 64px;
+    background-color: #eceef0;
+
+}
+
+.textos_finais{
+    width: 40%;
+}
+
+.textos_finais > h2{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #313131;
+    margin-bottom: 20px;
+}
+
+.btn_secundario{
+    color: #fff;
+    background-color: #ea2181;
+    margin: 32px auto 0;
+}
+
+footer{
+    text-align: center;
+    background-color: #fff;
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    padding: 6px 0;
+    color: #ea2181;
+}
+
+.imagem-1{
+    width: 45%;
+    max-width: 569px;
+    min-width: 450px;
+}
+
+.imagem_2{
+    width: 40%;
+    max-width: 552px;
+
+
+}
+
+/* começando a responsividade */
+/* 1° Breckpoint - tela/width de1100px */
+
+@media screen and (max-width: 1100px){
+
+    .conteudo-esq > h1{
+        font-size: 48px;
+    }
+
+    .btn{
+        font-size: 18px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .textos_finais{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .conteudo-esq > h1{
+        font-size: 40px;
+    }
+
+    .btn, .btn_menu, .artigos-principais > p, .conteudo-card > p,  .textos_finais > p{
+        font-size: 16px;
+    }
+
+    .secao-artigos > h2, .textos_finais > h2{
+        font-size: 25px;
+    }
+
+    .artigos-principais > h3, .artigos_destaque > h3{
+        font-size: 20px;
+    }
+
+    .conteudo-card > h4, .card_destaque > h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 830px){
+
+    .imagem-1{
+        display: none;
+    }
+
+    .conteudo-esq{
+        width: 70%;
+        text-align: center;
+    }
+
+    .conteudo-inicial > div{
+        justify-content: center;
+    }
+
+    .conteudo-esq > .btn{
+        margin: auto;
+    }
+
+    .conteudo-esq > h1{
+        font-size: 56px;
+    }
+
+    .secao-artigos > div{
+        flex-direction: column-reverse;
+    }
+
+    .artigos_destaque{
+        width: 100%;
+    }
+
+    .cards_destaque{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card_destaque{
+        width: 47%;
+        min-width: 260px;
+    }
+
+    .artigos-principais{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .conteudo_final{
+        flex-direction: column;
+    }
+
+    .textos_finais{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    .imagem_2{
+        width: 60%;
+        min-width: 200px;
+    }
+
+}

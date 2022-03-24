@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Rubik&display=swap');
+
+/* resetando os estilo padrão do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*deixa os elementos dentro das coisas*/
+}
+/* resetando o estilo padrão das tags a */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* nosso grid que vai embrulhar todo nosso conteudo */
+.embrulho{
+    width: 1120px;
+    margin: 0 auto; /*levando o conteudo pro centro da tela*/
+}
+
+/* esttilo do cabeçalho */
+header{
+    background-color: #3C184E;
+    padding: 10px 0;
+}
+
+/* chamando a div do header de um jeito diferente */
+
+header > div{
+    display: flex;
+    color: #fff
+}
+
+/* colocando a fonte na no h3 do cabeçalho */
+header > div > h3{
+    font-family:'Rubik', sans-serif; ;
+    margin-left: 8px;
+}
+/* para conseguir mexer no fundo fora do embrulho */
+.banner{
+    /* background-color: cyan; */
+    padding: 64px 0;
+   
+}
+/* config do nosso titulo */
+h1{
+    font-family: 'Merriweather', serif;;
+    font-size: 64px;
+    color: #3C184E ;
+}
+/* config do texto pequeno do banner */
+.banner > div > p{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;;
+    color: #3C184E ;
+    margin: 20px 0 40px;
+}
+/* config do botão do banner */
+#botao{
+    font-family: 'Rubik', sans-serif;;
+    color: #fff;
+    background-color: #713fff;
+    padding: 12px 32px;
+    border-radius: 40px;
+    display: block; /*trocadno o comportamento do a de inline para objeto*/
+    width: 155px;
+
+}
+
+#botao:hover{
+    color: #fff;
+    background-color: #cebcff;
+    border-width: medium;
+     border-style: solid;
+     border-color: #713fff;
+
+}
+
+#secao1{
+    color: #fff;
+    background-color: #713fff;
+    padding: 64px 0 0.1px;
+}
+
+.titulo_secao{
+    font-family:  'Merriweather', serif;;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.artigo{
+    background-color: #3C184E;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 64px;
+}
+
+.artigo > h3{
+    font-family: 'Merriweather', serif;;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.artigo > p{
+    font-family: 'Rubik', sans-serif;;
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    background-color: #3C184E;
+    font-family: 'Rubik', sans-serif;;
+    font-size: 19px;
+    color: #fff;
+    padding: 5px 0;
+}
