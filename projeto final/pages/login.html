@@ -17,11 +17,24 @@
         <div class="wrapper flex">
             <img src="../img/Blaize Baller.gif" alt="Logo do site escrita o nome do site cujo é Bando Games" class="logo_cabecalho">
             <nav class="botoes_cabecalho">
-                <a href="../index.html">inicio</a>
-                <a href="#">noticia</a>
-                <a href="./cadastro.html">cadastro</a>
-                <a href="./login.html">login</a>
+                <a class="botao_cabecalho" href="../index.html">inicio</a>
+                <a class="botao_cabecalho" href="#">noticia</a>
+                <a class="botao_cabecalho" href="./cadastro.html">cadastro</a>
+                <a class="botao_cabecalho" href="./login.html">login</a>
             </nav>
+            <div class="menu_lateral">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" id="btnfechar" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <a href="../index.html">inicio</a>
+                    <a href="#">noticia</a>
+                    <a href="./cadastro.html">cadastro</a>
+                    <a href="./login.html">login</a>
+                  </div>
+                  
+                  <div id="main">
+                    <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></i></button>
+                  </div>
+            </div>
         </div>
     </header>
     <main>

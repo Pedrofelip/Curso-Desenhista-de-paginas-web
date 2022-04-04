@@ -1,7 +1,7 @@
 .fundo_form_login{
     background-color: #053C5E;
     width: 23%;
-    height: 610px;
+    height: 60vh;
     margin: 12vh auto;
     border-radius: 47px;
     display: flex;
@@ -97,4 +97,44 @@
     font-family: 'Squada One', cursive;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1536px){
+    .redirecionamento{
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    
+    .redirecionamento > a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .olho_botao{
+        width: 15%;
+    }
+
+    .inputs_form_senha{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .btn{
+        height: 5;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .btn{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .fundo_form_login{
+        width: 75%;
+    }
 }
